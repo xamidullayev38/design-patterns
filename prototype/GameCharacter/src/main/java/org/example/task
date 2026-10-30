@@ -1,0 +1,40 @@
+## Amaliy topshiriq: Game Character Prototype
+
+**Maqsad:** Prototype dizayn pattern yordamida mavjud o‘yin qahramonidan nusxa yaratish.
+
+### Vazifa
+
+O‘yin qahramonlarini yaratish tizimini ishlab chiqing. Tizim mavjud qahramon nusxasidan foydalanib, yangi qahramon yaratishi kerak.
+
+### 1. `Copyable` interfeysi
+- `clone()` metodini e’lon qiling.
+
+### 2. `GameCharacter` klassi
+Quyidagi maydonlarga ega bo‘lsin:
+- `id` — qahramon ID raqami;
+- `name` — qahramon nomi;
+- `level` — qahramon darajasi;
+- `weapon` — qurol nomi.
+
+Talablar:
+- Konstruktor orqali maydonlarga qiymat berilsin.
+- `clone()` metodi yangi qahramon nusxasini yaratsin.
+- `toString()`, getter va setter metodlari yozilsin.
+
+### 3. `CharacterFactory` klassi
+- `GameCharacter` prototipini saqlasin.
+- Konstruktor orqali prototip qabul qilsin.
+- `setCharacter()` metodi orqali prototipni almashtira olsin.
+- `cloneCharacter()` metodi yangi nusxa qaytarsin.
+
+### 4. `GameRunner` klassi
+`main()` metodida:
+1. Bitta qahramon yarating.
+2. Uni `CharacterFactory` ga uzating.
+3. Prototipdan ikkita nusxa yarating.
+4. Nusxalarning nomi, darajasi va qurolini o‘zgartiring.
+5. Original qahramon o‘zgarmaganini tekshiring.
+
+### Qo‘shimcha talab
+`cloneCharacter()` metodi har safar yangi obyekt qaytarishi kerak. `original == clone` natijasi `false` bo‘lishi lozim.
+
